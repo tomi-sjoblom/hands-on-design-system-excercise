@@ -1,0 +1,54 @@
+import {
+  ArgsTable,
+  Meta,
+  Canvas,
+  Story,
+} from "@storybook/addon-docs/blocks";
+import { config, withDesign } from "storybook-addon-designs";
+import ProductCard from ".";
+import Button from "../Button";
+import Icon from "../Icon";
+import productImage from "./productImageSample.jpg";
+
+
+<Meta title="Components/ProductCard" parameters={{
+    viewport: {
+      defaultViewport: 'mobile1'
+    },
+    design: config({
+        type: "figma",
+        url:
+          "https://www.figma.com/file/AWWkZAdBsBvZJHu6PnjbtP/Workshop-design-file-1?node-id=264%3A397",
+      }),
+  }}/>
+
+export const cardArgs = {
+  name: "Delicious Vanilla Cupcake",
+  image: productImage,
+  price: "€2.00",
+  description: "Sweets",
+};
+
+## ProductCard
+
+ProductCard component displays product name, image and price.
+
+<Canvas>
+  <Story name="Small" args={cardArgs} >
+    {(args) => <ProductCard size="small" {...args} />}
+  </Story>
+  <Story name="Medium" args={cardArgs}>
+    {(args) => <div style={{maxWidth: "140px"}}>
+<ProductCard size="medium" {...args} />
+</div>
+}
+  </Story>
+  <Story name="Big" args={cardArgs}>
+    {(args) => <div style={{maxWidth: "295px"}}><ProductCard size="big" {...args} /></div>}
+  </Story>
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={ProductCard} />
