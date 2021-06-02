@@ -57,6 +57,14 @@ module.exports = {
             type: "color",
           },
         },
+        /* Filter and extract spacing tokens*/
+        {
+          destination: "spacing.js",
+          format: "javascript/es6",
+          filter: function (prop) {
+            return prop.path[0] === "spacing";
+          },
+        },
       ],
     },
   },
