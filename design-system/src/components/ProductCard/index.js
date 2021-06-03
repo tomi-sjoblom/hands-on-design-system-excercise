@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { spacing, radius } from "../../tokens";
 import Button from "../Button";
 import Icon from "../Icon";
 import { bool, string, oneOf } from "prop-types";
@@ -71,9 +72,9 @@ const StyledProductCardImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   margin-bottom: ${({ size }) =>
-    size === "big" ? "24px" : size === "small" ? "0px" : "16px"};
+    size === "big" ? spacing.spacing2XlBottom : size === "small" ? "0px" : spacing.spacingLgBottom};
   display: block;
-  border-radius: 32px;
+  border-radius: ${radius.radii32RadiiTopLeft};
 `;
 
 const StyledButton = styled(Button)`
@@ -81,7 +82,7 @@ const StyledButton = styled(Button)`
   top: 0;
   left: 0;
   z-index: 1;
-  margin: 24px;
+  margin: ${spacing.spacing2XlLeft};
 `;
 
 const StyledProductCardInfo = styled.div`
