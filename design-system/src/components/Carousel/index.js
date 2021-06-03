@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
+import { colors, radius, spacing } from "../../tokens";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import { arrayOf, shape, string } from "prop-types";
@@ -30,10 +31,10 @@ Carousel.propTypes = {
 
 const StyledCarousel = styled.div`
   > .awssld {
-    --control-bullet-color: "rgba(100, 116, 139, 1)";
-    --control-bullet-active-color: "rgba(12, 17, 24, 1)";
+    --control-bullet-color: ${colors.primary100};
+    --control-bullet-active-color: ${colors.onBackground500};
     --content-background-color: transparent;
-    --loader-bar-color: "rgba(255, 255, 255, 1)";
+    --loader-bar-color: ${colors.primary500};
     --loader-bar-height: 1px;
   }
   .awssld__content > img,
@@ -51,9 +52,9 @@ const StyledCarousel = styled.div`
     height: 36px;
     align-items: flex-end;
     button {
-      width: 8px;
-      height: 8px;
-      margin: 0 4px;
+      width: ${spacing.spacingBaseLeft};
+      height: ${spacing.spacingBaseTop};
+      margin: 0 ${spacing.spacingSmLeft};
       opacity: 0.6;
       border-radius: 50%;
     }
