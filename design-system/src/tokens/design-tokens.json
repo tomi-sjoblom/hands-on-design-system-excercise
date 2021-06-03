@@ -227,7 +227,7 @@
     "8": {
       "category": "radius",
       "radius": {
-        "value": 4,
+        "value": 8,
         "type": "number",
         "unit": "pixel"
       },
@@ -237,22 +237,60 @@
       },
       "radii": {
         "topLeft": {
-          "value": 4,
+          "value": 8,
           "type": "number",
           "unit": "pixel"
         },
         "topRight": {
-          "value": 4,
+          "value": 8,
           "type": "number",
           "unit": "pixel"
         },
         "bottomRight": {
-          "value": 4,
+          "value": 8,
           "type": "number",
           "unit": "pixel"
         },
         "bottomLeft": {
-          "value": 4,
+          "value": 8,
+          "type": "number",
+          "unit": "pixel"
+        }
+      },
+      "smoothing": {
+        "value": 0,
+        "type": "number"
+      }
+    },
+    "12": {
+      "category": "radius",
+      "radius": {
+        "value": 12,
+        "type": "number",
+        "unit": "pixel"
+      },
+      "radiusType": {
+        "value": "single",
+        "type": "string"
+      },
+      "radii": {
+        "topLeft": {
+          "value": 12,
+          "type": "number",
+          "unit": "pixel"
+        },
+        "topRight": {
+          "value": 12,
+          "type": "number",
+          "unit": "pixel"
+        },
+        "bottomRight": {
+          "value": 12,
+          "type": "number",
+          "unit": "pixel"
+        },
+        "bottomLeft": {
+          "value": 12,
           "type": "number",
           "unit": "pixel"
         }
