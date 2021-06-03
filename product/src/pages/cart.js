@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, SummaryTable, colors } from "design-system";
+import { Button, Icon, OrderSummary, colors, Avatar } from "design-system";
 import { Link } from "react-router-dom";
 
 const data = require("../data/data.js");
@@ -16,7 +16,7 @@ const Cart = ({
     <div>
       <StyledDiv1>
         <StyledDiv2>
-          <StyledImage1 src={data.user.avatar} />
+          <Avatar src={data.user.avatar} />
           <Button isOutline>
             <Icon name="menu" />
           </Button>
@@ -32,7 +32,7 @@ const Cart = ({
         </StyledDiv3>
         <StyledBorder />
         <StyledDiv5>
-          <SummaryTable
+          <OrderSummary
             items={[
               { name: "Subtotal", price: item.price },
               { name: "Estimated Delivery & Handling", price: "€0.00" },
@@ -47,12 +47,6 @@ const Cart = ({
     </div>
   );
 };
-
-const StyledImage1 = styled.img`
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-`;
 
 const StyledDiv1 = styled.div`
   padding: 64px 40px;

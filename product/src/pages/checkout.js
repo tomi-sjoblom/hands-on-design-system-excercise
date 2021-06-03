@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, Carousel, Select, colors } from "design-system";
+import { Button, Icon, Carousel, colors } from "design-system";
 import { Link } from "react-router-dom";
 
 const imagesPath = `${process.env.PUBLIC_URL}/images`;
@@ -108,13 +108,6 @@ const Checkout = () => {
         </StyledDiv5>
         <p>Tarja A Grönholm</p>
         <StyledDiv6>
-          <Select
-            options={[
-              { title: "DHL Express", value: "dhl" },
-              { title: "Fedex", value: "fedex" },
-              { title: "Pick up at store", value: "pickup" },
-            ]}
-          />
           <p>€00.00</p>
         </StyledDiv6>
         <StyledBorder />
