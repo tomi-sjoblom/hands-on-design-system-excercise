@@ -1,6 +1,7 @@
 import { arrayOf, string, shape } from "prop-types";
 import React from "react";
 import styled from "styled-components";
+import { spacing, radius, colors } from "../../tokens";
 import Icon, { icons } from "../Icon";
 import {
   Listbox,
@@ -65,13 +66,13 @@ Select.propTypes = {
 
 export const StyledSelect = styled(Listbox)`
   > [data-reach-listbox-button] {
-    padding: 8px 16px;
+    padding: ${spacing.spacingBaseTop}  ${spacing.spacingLgTop};
     font-family: "DM Sans";
-    line-height: 24px;
+    line-height: ${spacing.spacingXlTop};
     font-weight: bold;
-    border-color: "rgba(188, 199, 213, 1)";
-    border-radius: 12px;
-    color: "rgba(12, 17, 24, 1)";
+    border-color: ${colors.onSurface100};
+    border-radius: ${radius.radii12RadiiTopLeft};
+    color: ${colors.onBackground500};
     position: relative;
     outline: none;
     align-items: baseline;
