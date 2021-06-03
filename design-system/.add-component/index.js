@@ -42,15 +42,16 @@ fs.readFile("./src/index.js", "utf8", function (err, data) {
   // grab all components and combine them with new component
   const currentComponents = data.match(/(?<={ default as )(.*?)(?= })/g);
   const newComponents = [name, ...currentComponents].sort();
+  const tokens = data.match(/(?<={ )(.*?)(?= } from ".\/tokens")/g);
 
   const fileComment = `/*
  * This is an index file for your library.
  * It's being updated automatically by add-component script
- * Don't edit it directly, your chages will be overwritten.
+ * You can add tokens/components reexport, it will be preserved at next run, but not anything else.
  */
 
 export { default as GlobalStyle } from "./global.js";
-export { colors, typography, spacing } from "./tokens";\n\n`;
+export { ${tokens} } from "./tokens";\n\n`;
 
   // create the import and export statements
   const exportStatements = newComponents
@@ -62,7 +63,6 @@ export { colors, typography, spacing } from "./tokens";\n\n`;
     .join("");
 
   const fileContent = `${fileComment}\n${exportStatements}`;
-
   fs.writeFile(`./src/index.js`, fileContent, writeFileErrorHandler);
 });
 

@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { string, shape, arrayOf } from "prop-types";
 
-/* SummaryTable
+/* OrderSummary
  *
- * SummaryTable displays order details in a table, each row has information on name and price for each item.
+ * OrderSummary displays order details in a table, each row has information on name and price for each item.
  */
 
-const SummaryTable = ({ items, total, ...props }) => {
+const OrderSummary = ({ items, total, ...props }) => {
   return (
     items &&
     items.length > 0 && (
@@ -35,7 +35,7 @@ const SummaryTable = ({ items, total, ...props }) => {
   );
 };
 
-SummaryTable.propTypes = {
+OrderSummary.propTypes = {
   items: arrayOf(
     shape({
       name: string,
@@ -87,4 +87,4 @@ const StyledTotal = styled.div`
   text-align: right;
 `;
 
-export default SummaryTable;
+export default OrderSummary;

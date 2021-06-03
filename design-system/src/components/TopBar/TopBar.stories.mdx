@@ -1,0 +1,71 @@
+import { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks";
+import { config } from "storybook-addon-designs";
+
+import TopBar from ".";
+import { Avatar, Button, Icon } from "../..";
+
+
+<Meta
+  title="Components/TopBar"
+  parameters={{
+    viewport: {
+      defaultViewport: "mobile1",
+    },
+    design: config({
+      type: "figma",
+      url:
+        "https://www.figma.com/file/AWWkZAdBsBvZJHu6PnjbtP/Workshop-design-file-1?node-id=270%3A201",
+    }),
+  }}
+/>
+
+export const avatarSrc = "/sampleImages/userImageSample.jpg";
+
+## TopBar
+
+A wrapper component for the app TopBar, with slots for two actions and a title.
+
+<Canvas>
+  <Story name="Default" args={{ title: "" }}>
+    {(args) => (
+      <TopBar
+        {...args}
+        firstAction={<Avatar src={avatarSrc} />}
+        lastAction={
+          <Button isOutline>
+            <Icon name="menu" />
+          </Button>
+        }
+      />
+    )}
+  </Story>
+  <Story name="Item page" args={{title: "Product Details"}}>
+    {(args) => <TopBar
+      firstAction={
+        <Button isOutline>
+          <Icon name="arrowBack" />
+        </Button>
+      }
+      {...args}
+    />}
+  </Story>
+  <Story name="Checkout Page" args={{title: "Checkout"}}>
+    {(args) => <TopBar
+      firstAction={
+        <Button isOutline>
+          <Icon name="arrowBack" />
+        </Button>
+      }
+      lastAction={
+        <Button isOutline>
+          <Icon name="settings" />
+        </Button>
+      }
+      {...args}
+    />}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={TopBar} />
