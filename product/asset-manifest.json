@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/hands-on-design-system-excercise/product/static/js/main.919f6741.chunk.js",
-    "main.js.map": "/hands-on-design-system-excercise/product/static/js/main.919f6741.chunk.js.map",
+    "main.js": "/hands-on-design-system-excercise/product/static/js/main.8f4f4a5c.chunk.js",
+    "main.js.map": "/hands-on-design-system-excercise/product/static/js/main.8f4f4a5c.chunk.js.map",
     "runtime-main.js": "/hands-on-design-system-excercise/product/static/js/runtime-main.f80b45d8.js",
     "runtime-main.js.map": "/hands-on-design-system-excercise/product/static/js/runtime-main.f80b45d8.js.map",
-    "static/css/2.db92b86b.chunk.css": "/hands-on-design-system-excercise/product/static/css/2.db92b86b.chunk.css",
-    "static/js/2.b99556e6.chunk.js": "/hands-on-design-system-excercise/product/static/js/2.b99556e6.chunk.js",
-    "static/js/2.b99556e6.chunk.js.map": "/hands-on-design-system-excercise/product/static/js/2.b99556e6.chunk.js.map",
+    "static/css/2.f0d8f430.chunk.css": "/hands-on-design-system-excercise/product/static/css/2.f0d8f430.chunk.css",
+    "static/js/2.ec04435f.chunk.js": "/hands-on-design-system-excercise/product/static/js/2.ec04435f.chunk.js",
+    "static/js/2.ec04435f.chunk.js.map": "/hands-on-design-system-excercise/product/static/js/2.ec04435f.chunk.js.map",
     "index.html": "/hands-on-design-system-excercise/product/index.html",
-    "static/css/2.db92b86b.chunk.css.map": "/hands-on-design-system-excercise/product/static/css/2.db92b86b.chunk.css.map",
-    "static/js/2.b99556e6.chunk.js.LICENSE.txt": "/hands-on-design-system-excercise/product/static/js/2.b99556e6.chunk.js.LICENSE.txt"
+    "static/css/2.f0d8f430.chunk.css.map": "/hands-on-design-system-excercise/product/static/css/2.f0d8f430.chunk.css.map",
+    "static/js/2.ec04435f.chunk.js.LICENSE.txt": "/hands-on-design-system-excercise/product/static/js/2.ec04435f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f80b45d8.js",
-    "static/css/2.db92b86b.chunk.css",
-    "static/js/2.b99556e6.chunk.js",
-    "static/js/main.919f6741.chunk.js"
+    "static/css/2.f0d8f430.chunk.css",
+    "static/js/2.ec04435f.chunk.js",
+    "static/js/main.8f4f4a5c.chunk.js"
   ]
 }
