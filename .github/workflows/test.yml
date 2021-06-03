@@ -3,7 +3,7 @@ name: Run visual tests
 on:
   push:
     paths:
-      - 'design-system/src/**'
+      - 'design-system/**'
 jobs:
   start-and-test:
     runs-on: ubuntu-latest
