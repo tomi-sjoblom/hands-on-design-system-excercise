@@ -53,12 +53,6 @@ const Home = () => {
   );
 };
 
-const StyledImage1 = styled.img`
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-`;
-
 const StyledDiv1 = styled.div`
   padding: 64px 40px;
 `;
