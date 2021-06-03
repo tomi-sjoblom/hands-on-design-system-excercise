@@ -187,6 +187,29 @@
     "4xl": {
       "category": "spacing",
       "top": {
+        "value": 40,
+        "type": "number",
+        "unit": "pixel"
+      },
+      "right": {
+        "value": 40,
+        "type": "number",
+        "unit": "pixel"
+      },
+      "bottom": {
+        "value": 40,
+        "type": "number",
+        "unit": "pixel"
+      },
+      "left": {
+        "value": 40,
+        "type": "number",
+        "unit": "pixel"
+      }
+    },
+    "5xl": {
+      "category": "spacing",
+      "top": {
         "value": 48,
         "type": "number",
         "unit": "pixel"
