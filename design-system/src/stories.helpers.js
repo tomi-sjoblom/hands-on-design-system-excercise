@@ -149,7 +149,7 @@ export function ShadowSet({shadows}) {
   const getShadow = (arr) => {
     return arr.reduce((res, obj) => {
       const shadow = obj[0].split('shadow')[1].split(/(Type|Radius|Color|OffsetX|OffsetY|Spread)/)[0];
-      console.log(shadow)
+      //console.log(shadow)
       if (res.indexOf(shadow) === -1 ) res.push(shadow);
       return res;
     }, []);
@@ -164,6 +164,7 @@ export function ShadowSet({shadows}) {
     <div>{spacesSizes.map(size => <ShadowBox key={size} size={size} shadows={spacesGrouped[size]} />)}</div>
   )
 }
+
 
 const ShadowBoxStyled = styled.div`
   margin-bottom: 2em;
@@ -181,7 +182,8 @@ const ShadowUnit = styled.div`
   height: 100px;
   border-radius: 16px;
   display: inline-block;
-  background-color: ${(colors.primary500 || 'red')};
+  background-color: ${(colors.white || 'white')};
+  border: 1px solid ${(colors.onSurface100 || 'lightgrey')};
   box-shadow: ${({ boxshadow }) => boxshadow};
 `;
 
@@ -189,7 +191,7 @@ export function ShadowBox({shadows}) {
   return (
     <ShadowBoxStyled>
       <ShadowUnitHolder>
-        <ShadowUnit boxshadow={shadows[0][1]}/>
+        <ShadowUnit boxshadow={shadows[3][1] + " " + shadows[4][1] + " " + shadows[1][1] + " " + shadows[5][1] + " " + shadows[2][1]}/>
       </ShadowUnitHolder>
       <code>Variables: {shadows.map(item => item[0]).join(', ')}</code>
     </ShadowBoxStyled>
