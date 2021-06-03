@@ -65,7 +65,7 @@ export function SpacingBox({spaces}) {
       <SpacingUnitHolder>
         <SpacingUnit size={spaces[0][1]}/>
       </SpacingUnitHolder>
-      <code>Variables: {spaces.map(item => item[0]).join(', ')}</code>
+      <code><strong>Size:</strong> {spaces[0][1]}, <strong>Variables:</strong> {spaces.map(item => item[0]).join(', ')}</code>
     </SpacingBoxStyled>
   )
 }
@@ -128,7 +128,7 @@ export function RadiusBox({spaces}) {
       <RadiusUnitHolder>
         <RadiusUnit size={spaces[0][1]}/>
       </RadiusUnitHolder>
-      <code>Variables: {spaces.map(item => item[0]).join(', ')}</code>
+      <code><strong>Size:</strong> {spaces[0][1]}, <strong>Variables:</strong> {spaces.map(item => item[0]).join(', ')}</code>
     </RadiusBoxStyled>
   )
 }
