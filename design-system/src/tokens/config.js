@@ -65,6 +65,22 @@ module.exports = {
             return prop.path[0] === "spacing";
           },
         },
+        /* Filter and extract radius tokens*/
+        {
+          destination: "radius.js",
+          format: "javascript/es6",
+          filter: function (prop) {
+            return prop.path[0] === "radii";
+          },
+        },
+        /* Filter and extract shadow tokens*/
+        {
+          destination: "shadow.js",
+          format: "javascript/es6",
+          filter: function (prop) {
+            return prop.path[0] === "shadow";
+          },
+        },
       ],
     },
   },
